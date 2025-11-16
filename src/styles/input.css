@@ -16,16 +16,17 @@
   --font-size-base: 1rem;
   --font-size-lg: 1.25rem;
   --font-size-xl: 2rem;
-  --font-weight-base: 400;
-  --font-weight-blod: 500;
+  --weight-base: 400;
+  --weight-blod: 700;
 
   /* 📏 Espacement (marges / paddings) */
-  --space-1: 4px;
-  --space-2: 8px;
-  --space-3: 12px;
-  --space-4: 16px;
-  --space-5: 24px;
-  --space-6: 32px;
+  --space-1: 12px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-5: 40px;
+  --space-6: 48px;
+  --space-7: 56px;
 
   /* 📦 Tailles */
   --radius-sm: 4px;
@@ -43,11 +44,12 @@
   padding: 0;
   box-sizing: border-box;
   font-family: var(--font-family-base);
+  font-weight: var(--weight-base);
 }
 
 /* Styles globaux */
 body {
-  background: var(--color-light);
+  background: var(--main-background);
   color: var(--color-dark);
   font-size: var(--font-size-base);
   line-height: 1.6;
@@ -61,4 +63,39 @@ a {
 
 li {
   list-style: none;
+  color: var(--color-light);
+}
+
+/* Header */
+
+header {
+  width: 100%;
+  height: auto;
+  padding: var(--space-4) var(--space-6);
+}
+
+.navbar {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* contenair links head */
+.menu-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  li {
+    font-size: var(--font-size-base);
+    margin: 0 var(--space-4);
+    transition: var(--transition-normal);
+  }
+  /* links header */
+  li:hover {
+    font-weight: var(--weight-blod);
+    text-decoration: underline;
+  }
 }
