@@ -178,12 +178,105 @@ main {
     background-color: var(--btn-hover-color);
   }
 }
+/* ======================================= Style Lucien*/
+/* Design cards*/
+.services {
+  height: auto;
+  background-color: var(--main-background);
+  display: flex;
+  flex-direction: row;
+  gap: 20%;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.service-card {
+  padding: 30px;
+  width:30%;
+  /*background-color: rgb(35, 72, 220);*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+.icon-carte1 {
+  background-image: url("../assets/images/icon-access-anywhere.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 70px;
+  width: 70px;
+}
+.icon-carte2 {
+  background-image: url("../assets/images/icon-security.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 70px;
+  width: 70px;
+}
+.icon-carte3 {
+  background-image: url("../assets/images/icon-collaboration.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 70px;
+  width: 70px;
+}
+.icon-carte4 {
+  background-image: url("../assets/images/icon-any-file.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 70px;
+  width: 70px;
+}
+.block-illus {
+  background-color: var(--main-background);
+  margin-left: 5%;
+  margin-top: 10%;
+  height: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 8%;
+}
+.block1{
+  width: 50%;
+  padding-top: 40%;
+  background-image: url("../assets/images/illustration-stay-productive.png");
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+}
+.block2 {
+  width: 35%;
+  padding-top: 0;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+}
+.block2 h1{
+  font-weight: bold;
+}
+.link-stay {
+  display: flex;
+  flex-direction: row;
+  gap: 5%;
+}
+.link-stay p {
+  color: #58eeda;
+}
+.link-stay p:hover {
+  color: #b5f3ea;
+}
 
 /* < ======================================================== > */
 /* Media Queries */
 /* screen mobile 320px -> 480px */
 
-@media only screen and (min-width: 320px) and (max-width: 480px) {
+@media /*(max-width: 760px)*/ only screen and (min-width: 320px) and (max-width: 480px) {
   header {
     padding: var(--space-1);
   }
@@ -238,5 +331,45 @@ main {
       line-height: var(--space-3);
       padding: 0;
     }
+  }
+  /* Responsive Lucien*/
+  .services{
+    margin: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-2);
+  }
+  .service-card{
+    padding: 0%;
+    width: 100%;
+    min-height: 320px;
+    justify-content: center;
+  }
+  .block-illus {
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+    flex-wrap: wrap;
+  }
+  .block1 {
+    padding-left:  0%;
+    padding-right: 0%;
+    width: 100%;
+    min-height: 320px;
+  }
+  .block2{
+    padding-left: 0%;
+    padding-right: 0%;
+    width: 100%;
   }
 }
