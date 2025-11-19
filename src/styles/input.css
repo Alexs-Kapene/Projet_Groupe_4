@@ -181,18 +181,20 @@ main {
 /* ======================================= Style Lucien*/
 /* Design cards*/
 .services {
+  margin-left: 40px;
+  margin-right: 40px;
   height: auto;
   background-color: var(--main-background);
   display: flex;
   flex-direction: row;
-  gap: 6%;
+  gap: 7%;
   align-items: center;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
 }
 .service-card {
   padding: 30px;
-  width:30%;
+  width:35%;
   /*background-color: rgb(35, 72, 220);*/
   display: flex;
   align-items: center;
@@ -263,16 +265,98 @@ main {
   line-height: 4.5rem;
 }
 .link-stay {
+  width: 175px;
   display: flex;
   flex-direction: row;
   gap: 5%;
+  border-bottom: #65e2d9 solid;
+  border-width: 1px;
+  padding-bottom: 4px;
 }
 .link-stay p {
   color:var(--btn-hover-color);
 }
+/*
+.link-stay #ligne {
+  border-bottom: #65e2d9;
+  border-width: 1px;
+  padding-bottom: 4px;
+}*/
+.link-stay img{
+  width: 20px;
+  height: 20px;
+}
 .link-stay p:hover {
   color: #b5f3ea;
 }
+/* Style Testimonies
+.div-testp {
+  width: 85%;
+  display: flex;
+  margin: 13% 10% 0% 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.ico-apo {
+  height: 70px;
+  width: 70px;
+  background-image: url("../assets/images/bg-quotes.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.cards-test {
+  margin-top: -2%;
+  margin-left: 1.5%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 3%;
+
+}
+.testimony {
+  background-color: var(--testimonials-background);
+  width: 40%;
+  padding: 3% 2% 2% 2%;
+  flex-direction: column;
+  display: flex;
+  justify-content: flex-start;
+  gap: 25px;
+}
+.b-profile {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+
+}
+.photoprofil1 {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-image: url("../assets/images/profile-1.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.photoprofil2 {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-image: url("../assets/images/profile-2.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.photoprofil3 {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-image: url("../assets/images/profile-3.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.name-pro {
+  font-weight: var(--weight-blod);
+}*/
 
 /* < ======================================================== > */
 /* Media Queries */
@@ -374,4 +458,40 @@ main {
     padding-right: 0%;
     width: 100%;
   }
+  /*
+  .div-testp {
+    flex-direction: column;
+    margin-top: 13%;
+    margin-left: 0%;
+    margin-right: 0%;
+    width: 100%;
+    gap: 0%;
+  }
+  .cards-test {
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+  }
+  .testimony {
+    margin: 0%;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 10%;
+  }
+  .ico-apo {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-size: contain;
+    background-repeat: no-repeats;
+  }*/
+
 }
