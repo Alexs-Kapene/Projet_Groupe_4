@@ -292,6 +292,76 @@ main {
   color: #b5f3ea;
 }
 
+
+/* Style Testimonies*/
+.div-testp {
+  width: 85%;
+  display: flex;
+  margin: 13% 10% 0% 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.ico-apo {
+  height: 70px;
+  width: 70px;
+  background-image: url("../assets/images/bg-quotes.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.cards-test {
+  margin-top: -2%;
+  margin-left: 1.5%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 3%;
+
+}
+.testimony {
+  background-color: var(--testimonials-background);
+  width: 40%;
+  padding: 3% 2% 2% 2%;
+  flex-direction: column;
+  display: flex;
+  justify-content: flex-start;
+  gap: 25px;
+}
+.b-profile {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+
+}
+.photoprofil1 {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-image: url("../assets/images/profile-1.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.photoprofil2 {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-image: url("../assets/images/profile-2.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.photoprofil3 {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-image: url("../assets/images/profile-3.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.name-pro {
+  font-weight: var(--weight-blod);
+}
+
 /* -------- =========== Contact ============-------- */
 .contact {
   position: relative;
@@ -422,15 +492,6 @@ main {
   border-color: var(--btn-hover-color);
 }
 
-@media (max-width: 768px) {
-  .footer-content {
-    flex-direction: column;
-  }
-
-  .social {
-    margin-top: 20px;
-  }
-}
 
 /* < ======================================================== > */
 /* Media Queries */
@@ -560,6 +621,45 @@ main {
     padding-right: 0%;
     width: 100%;
   }
+
+  /*====== Testimonia Mobile=====*/
+.div-testp {
+    flex-direction: column;
+    margin-top: 13%;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding: var(--space-4);
+    width: 100%;
+    gap: 0%;
+  }
+  .cards-test {
+    width: 100%;
+    padding: 0%;
+    margin: 0 auto;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+  }
+  .testimony {
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 10%;
+  }
+  .ico-apo {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-size: contain;
+    background-repeat: no-repeats;
+  }
+
+
 
   /* ====== Contact ========= */
 
